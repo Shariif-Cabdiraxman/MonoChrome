@@ -1,0 +1,31 @@
+# Normalise line endings so Windows CRLF and macOS/Linux LF contributors
+# don't see whole-file diffs for meaningless changes.
+* text=auto
+
+# Lock the files that must stay LF (Next.js, Node, shell scripts)
+*.js    text eol=lf
+*.jsx   text eol=lf
+*.ts    text eol=lf
+*.tsx   text eol=lf
+*.json  text eol=lf
+*.mjs   text eol=lf
+*.css   text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+
+# Generated / vendored paths that should not be diffed line-by-line
+node_modules/  -diff
+.next/         -diff
+out/           -diff
+
+# Binary assets — never line-ending normalised
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.ico    binary
+*.woff   binary
+*.woff2  binary
+*.pdf    binary
