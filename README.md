@@ -1,4 +1,4 @@
-# GWK University — Monochrome Homepage
+# University — Monochrome Homepage
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=next.js&logoColor=white)](https://nextjs.org)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev)
